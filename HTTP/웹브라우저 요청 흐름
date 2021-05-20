@@ -1,0 +1,26 @@
+# 웹브라우저 요청 흐름
+
+![2 2 1](https://user-images.githubusercontent.com/60098769/118999220-0e077e00-b9c5-11eb-8f95-f5f8148e9da7.png)
+
+1. DNS 서버를 조회한다. → IP와 PORT정보를 찾는다.  
+2. HTTP 요청 메시지를 생성한다.
+
+![2 2 2](https://user-images.githubusercontent.com/60098769/118999229-0f38ab00-b9c5-11eb-9466-161caad03f4b.png)
+
+![2 2 3](https://user-images.githubusercontent.com/60098769/118999240-11026e80-b9c5-11eb-8837-b2d8e0bf0dd6.png)
+
+여기서 말하는 전송 데이터가 바로
+
+![2 2 4](https://user-images.githubusercontent.com/60098769/118999256-12cc3200-b9c5-11eb-9c67-8bc6f7a4c8ca.png)
+
+포트 이후, PATH 부터의 정보다
+
+![2 2 5](https://user-images.githubusercontent.com/60098769/118999272-16f84f80-b9c5-11eb-90e7-40e4870fefbd.png)
+
+![2 2 6](https://user-images.githubusercontent.com/60098769/118999275-1790e600-b9c5-11eb-91a7-ac59a854c3cb.png)
+
+- 이렇게 TCP/IP 패킷을 던지면 인터넷 망에서 수 많은 노드를 통해서 구글서버의 IP에 전달이 된다.
+- 구글 서버에 요청 패킷이 도착하면 TCP/IP 패킷을 까서 버린다.
+- HTTP 메시지를 해석한다
+
+
