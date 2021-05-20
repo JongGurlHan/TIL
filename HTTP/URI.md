@@ -1,7 +1,7 @@
 # URI
 Uniform Resource Identifier
 
-![2 2 2](https://user-images.githubusercontent.com/60098769/118998355-583c2f80-b9c4-11eb-8ee5-5604bb568eba.png)
+![url2](https://user-images.githubusercontent.com/60098769/118999042-e57f8400-b9c4-11eb-8659-a93b20f9af82.png)
 
 URI는 자원을 식별하는데 크게 2가지로 나눌 수 있다. 
 
@@ -10,9 +10,9 @@ URI는 자원을 식별하는데 크게 2가지로 나눌 수 있다.
 
 이름을 부여하면 리소스를 찾기가 힘들다 그래서 보통 URL를 쓴다.
 
-![2 2 3](https://user-images.githubusercontent.com/60098769/118998487-743fd100-b9c4-11eb-90c9-e56a31a97f7c.png)
+![url3](https://user-images.githubusercontent.com/60098769/118999018-e1536680-b9c4-11eb-9700-ac22a932b6ad.png)
 
-![2 2 4](https://user-images.githubusercontent.com/60098769/118998514-79048500-b9c4-11eb-91d5-c7a4a6c7bcc1.png)
+![url4](https://user-images.githubusercontent.com/60098769/118998977-da2c5880-b9c4-11eb-819d-220dbd80890f.png)
 
 - 스키마에 주로 프로토콜 정보들어간다
 - userinfo@ : url에 사용자 정보 포함해서 인증, 거의 안씀
