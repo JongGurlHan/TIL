@@ -1,6 +1,6 @@
 # 캐시와 조건부 요청 헤더
 
-##Cache-Control
+## Cache-Control
 캐시 지시어
 
 - Cache-Control: max-age
