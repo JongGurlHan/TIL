@@ -1,0 +1,65 @@
+# 기본 명령어 학습
+- SHOW TABLE STATUS : 데이터베이스 테이블 정보조회
+- DESCRIBE BOARD_INFO_TABLE;
+   DESC BOARD_INFO_TABLE; : 테이블에 무슨 열이 있는지 확인
+# SELECT
+- SELECT * FROM city;
+- SELECT name FROM city;
+- SELECT name, population FROM city;
+- SELECT * 
+FROM city
+WHERE population > 8000000;
+- SELECT * 
+FROM city
+WHERE population < 8000000
+AND population >7000000 ;
+- SELECT * 
+FROM city
+WHERE population BETWEEN 7000000 AND 8000000;
+
+
+### Q.1 한국이 있는 인구가 100만 이산인 도시 찾기
+SELECT * 
+FROM city
+WHERE countrycode = 'KOR'
+AND population >1000000;
+
+## IN :이산적인(DISCRETE)갑의 조건에선 IN 사용가능
+SELECT * 
+FROM city
+WHERE NAME IN('SEOUL', 'NEW YORK', 'TOKYO');
+
+### Q.2 한국, 미국, 일본이 있는 도시찾기
+SELECT * 
+FROM city
+WHERE COUNTRYCODE IN('KOR', 'USA', 'JPN');
+
+## LIKE
+ 문자열의 내용 검색하기 위해 사용
+ 문자 뒤에 % : 무엇이든 허용
+ 한 글자와 매치하기 위해서는 '_' 사용
+ 
+ - SELECT * 
+F ROM city
+WHERE COUNTRYCODE LIKE 'KO_';
+- SELECT * 
+FROM city
+WHERE NAME LIKE 'Tel %';
+
+## SUB Query
+쿼리문 안에 또 쿼리문이 들어있는 것
+서브 쿼리의 결과가 둘 이상이 되면 에러발생
+- SELECT * 
+FROM city
+WHERE CountryCode = (	SELECT CountryCode 
+						FROM CITY
+                        Where Name = 'SEOUL');
+
+### ANY
+서브쿼리의 여러 개의 결과 중 한가지만 만족해도 가능
+SOME은 ANY와 동일한 의미로 사용
+
+
+
+
+
